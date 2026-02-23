@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 - Flask: Web framework
 - scikit-learn: Machine learning models
@@ -34,3 +35,7 @@ AI Travel Recommendation Team
 ## Support
 
 For issues or questions, please open an issue on the repository.
+=======
+# ai-travel-recommendation-system
+Hybrid AI-based travel recommendation system using multi-factor scoring, personalization, and cold-start handling.
+>>>>>>> a3c1dc0f1d6262f61edfd9d7c8c0dbab73bcc39d

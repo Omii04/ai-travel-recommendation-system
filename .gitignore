@@ -1,5 +1,153 @@
-venv/
-__pycache__/
-*.pyc
-.env
-.ipynb_checkpoints/
+🌍 AI Travel Recommendation System
+
+A Hybrid Travel Recommendation System built using Machine Learning, Personalized Scoring, and Interactive Geospatial Visualization.
+
+This project combines:
+
+🎯 Personalized Weighted Ranking
+
+🧠 TF-IDF Content-Based Similarity
+
+🗺 Interactive PyDeck Map
+
+⚙ Streamlit Web Application
+
+🚀 Live Features
+
+✔ Personalized recommendation weights (rating, popularity, budget, significance)
+
+✔ Top ranked destinations
+
+✔ Similar place recommendations (ML-based)
+
+✔ Interactive India-centered map
+
+✔ Filter by type and best time to visit
+
+🧠 System Architecture
+1️⃣ Data Preprocessing
+
+Cleaned column names
+
+Normalized numeric features
+
+Handled missing values
+
+Removed duplicates
+
+2️⃣ Personalized Scoring Engine
+
+Final Score Formula:
+
+Final Score =
+w1 × Normalized Rating +
+w2 × Normalized Review Count +
+w3 × Significance Score +
+w4 × Budget Score
+
+Users dynamically control weights from UI.
+
+3️⃣ Content-Based Similarity Model
+
+Feature engineering: combined type + significance + city
+
+TF-IDF vectorization
+
+Cosine similarity
+
+Top-N similar place retrieval
+
+4️⃣ Hybrid Recommendation Logic
+
+Combines:
+
+Ranking-based score
+
+ML similarity
+
+5️⃣ Interactive Map
+
+Built using PyDeck
+
+Real latitude & longitude integration
+
+Hover tooltips (place + rating)
+
+India-centered 3D visualization
+
+🛠 Tech Stack
+
+Python
+
+Pandas
+
+Scikit-learn
+
+Streamlit
+
+PyDeck
+
+Git & GitHub
+
+📂 Project Structure
+ai-travel-recommendation-system/
+│
+├── app/
+│   └── app.py
+│
+├── src/
+│   ├── data_preprocessing.py
+│   ├── scoring_model.py
+│   ├── recommender.py
+│   ├── similarity_model.py
+│
+├── data/
+│   └── raw/
+│
+├── requirements.txt
+└── README.md
+⚙ Installation
+
+Clone the repository:
+
+git clone https://github.com/Omii04/ai-travel-recommendation-system.git
+cd ai-travel-recommendation-system
+
+Install dependencies:
+
+pip install -r requirements.txt
+
+Run the application:
+
+streamlit run app/app.py
+🎯 Key Learning Outcomes
+
+Built a modular ML project architecture
+
+Implemented feature normalization
+
+Designed weighted ranking system
+
+Applied TF-IDF & cosine similarity
+
+Integrated geospatial visualization
+
+Resolved real-world Git and deployment issues
+
+📈 Future Improvements
+
+Add collaborative filtering
+
+Add user authentication
+
+Deploy on cloud (Render / Railway / AWS)
+
+Add travel route planning
+
+Add review sentiment analysis
+
+👨‍💻 Author
+
+Om Patil
+B.E. Information Technology
+Savitribai Phule Pune University
